@@ -1,3 +1,11 @@
 # c_sharp
- - Some C sharp files for learning. 
- - These are basic C sharp and mostly beneficial for beginners.
+ - Some basic C# code for beginners. 
+ - These examples will cover basic:
+   - arithmetic operations
+   - conditional statements
+   - reference calls
+   - enumerations
+   - string
+   - structure 
+   - validation
+   
