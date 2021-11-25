@@ -3,7 +3,7 @@
  - These examples will cover basic:
    - arithmetic operations
    - conditional statements
-   - reference calls
+   - reference value types
    - enumerations
    - string
    - structure 
