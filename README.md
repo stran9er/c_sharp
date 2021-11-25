@@ -1,2 +1,3 @@
 # c_sharp
-Some C Sharp files for learning.
+ - Some C sharp files for learning. 
+ - These are basic C sharp and mostly beneficial for beginners.
