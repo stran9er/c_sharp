@@ -21,11 +21,10 @@ namespace Strings_Work
 
             // You can work with strings in array's. 
             var RandomNames = new string[4] { "Aurora", "Eli", "Nova", "Troy" };
-            for (int i = 0; i < RandomNames.Length; i++)
+            foreach (var item in RandomNames)
             {
-                Console.WriteLine(RandomNames[i]);
+                Console.WriteLine(item);
             }
-
             // We can also join the array for display.
             var formattedArray = string.Join(", ", RandomNames);
             Console.WriteLine(formattedArray);
