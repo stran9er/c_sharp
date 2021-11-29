@@ -103,9 +103,6 @@ namespace More_On_Strings
             float price = 29.99f;
             Console.WriteLine(price.ToString("c"));
             Console.WriteLine(price.ToString("C0"));
-
-            
-
         }
     }
 }
