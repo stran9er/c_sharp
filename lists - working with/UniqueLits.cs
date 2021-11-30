@@ -1,41 +1,47 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+
 /*
- * Ask the user to continuosly enter a number or type 'Quit' to exit.
- * The list may contain duplicates.
- * Display only the unique numbers found in the list.
-*/
-namespace UniqueLists
+ * Asks the user to enter numbers until quit is entered.
+ * Then display only the unique numbers.
+ */
+namespace Procedural_Work
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var moreNumbers = new List<int>();
+            var numbers = new List<int>();
 
             while (true)
             {
                 Console.WriteLine("Enter a number or 'Quit' to exit.");
-                var input = Console.ReadLine(); 
+                var input = Console.ReadLine();
 
-                if (input == "QUIT" || input == "quit")
-                {
+                if (input.ToLower() == "quit")
                     break;
-                }
-                else
-                {
-                    moreNumbers.Add(Convert.ToInt32(input));
-                }
+                numbers.Add(Convert.ToInt32(input));
             }
-            // Let's create a new list to hold distinct values.
-            var uniqueList = moreNumbers.Distinct();
-            
-            Console.WriteLine("\nThe unique items in the list are:");
-            foreach (var item in uniqueList)
+
+            Console.WriteLine("Unique Numbers:");
+            foreach (var number in UniqueNumbers(numbers))
+                Console.WriteLine(number);
+        }
+        
+        public static  List<int>UniqueNumbers(List<int> num)
+        {
+            // Takes the defined list.
+            var numbers = new List<int>(num);
+            // Holds unique Numbers.
+            var uNumbers = new List<int>();
+
+            foreach (var item in numbers)
             {
-                Console.WriteLine(item);
+                if (!uNumbers.Contains(item))
+                    uNumbers.Add(item);
             }
+            return uNumbers;
+
         }
     }
 }
