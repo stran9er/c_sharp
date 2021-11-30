@@ -7,5 +7,5 @@
    - enumerations
    - string
    - structure 
+   - System.IO (File, FileInfo, Directory, DirectoryInfo, Path)
    - validation
-   
