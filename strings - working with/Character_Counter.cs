@@ -18,26 +18,20 @@ namespace Character_Counter
             
             // Variable to hold the user defined word.
             var theWord = Console.ReadLine().ToLower();
-            // Variable to hold the vowel count.
-            var vowelCount = 0;
+            Console.WriteLine("{0} has {1} vowels.", theWord, VowelCount(theWord));
+        
+        }
+        public static int VowelCount(string word)
+        {
+            var vowels = new List<char>(new char[] {'a', 'e'. 'i', 'o', 'u'});
+            var vowelsCount = 0;
             
-            for (int i = 0; i < theWord.Length; i++)
+            foreach(var item in word.ToLower())
             {
-                // We can replace the characters for any as needed.
-                if (theWord[i] == 'a' || theWord[i] == 'e' || theWord[i] == 'i' 
-                    || theWord[i] == '0' ||  theWord[i] == 'u')
-                {
-                    vowelCount++; // Incremental
-                }
+                if (vowels.Contains(item))
+                    vowelsCount++;
             }
-            if (vowelCount == 0)
-            {
-                Console.WriteLine("No vowels found.");
-            }
-            else
-            {
-                Console.WriteLine("There were {0} vowels in your word.", vowelCount);
-            }
+            return vowelsCount;
         }
     }
 }
