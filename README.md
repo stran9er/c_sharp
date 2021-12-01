@@ -1,6 +1,6 @@
-# c_sharp
- - Some basic C# code for beginners/educational purposes. 
- - These examples will cover basic:
+# Simple C# Code Examples
+
+* These are basic C# covering various topics, such as:
    - arithmetic operations
    - conditional statements
    - reference value types
@@ -8,4 +8,4 @@
    - string
    - structure 
    - System.IO (File, FileInfo, Directory, DirectoryInfo, Path)
-   - validation
+   - validation (Simple user entry)
