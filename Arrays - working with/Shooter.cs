@@ -1,8 +1,8 @@
 using System;
 
-namespace Mocha_Questions
+namespace Shooters
 {
-    public class TestOne
+    public class SectOne
     {
         public static string numBallons(int N, int Y, int[] H)
         // public static int numBallons(int N, int Y, int[] H)
